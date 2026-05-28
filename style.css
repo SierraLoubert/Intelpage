@@ -85,6 +85,39 @@ body {
     box-shadow: 0 10px 24px rgba(0, 0, 0, 0.2);
 }
 
+/* CARD */
+.timeline-card {
+    flex: 0 0 320px;
+    background: white;
+    border-radius: 16px;
+    padding: 20px;
+    box-shadow: 0 5px 18px rgba(0,0,0,0.15);
+
+    transition: 0.3s ease;
+
+    overflow: hidden;
+}
+
+/* HIDDEN INFO */
+.extra-info {
+    opacity: 0;
+    max-height: 0;
+
+    overflow: hidden;
+
+    transition:
+        opacity 0.4s ease,
+        max-height 0.4s ease;
+
+    margin-top: 10px;
+}
+
+/* SHOW INFO ON HOVER */
+.timeline-card:hover .extra-info {
+    opacity: 1;
+    max-height: 200px;
+}
+
 /* CARD IMAGES */
 .timeline-card img {
     width: 100%;
